@@ -1,7 +1,5 @@
 //This is boilerplate code. Paste this into every new component you create, and start writing html in the return().
-
 import "./Boilerplate.css"; //Replace the name with the name of your css file for the component (You should name ur css the same as your component)
-import "../../index.css"; // Don't change this!
 
 // Change the function name to whatever your component is (Ex: Button, Navbar, etc.)
 function Boilerplate() {
