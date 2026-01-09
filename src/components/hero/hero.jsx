@@ -12,7 +12,7 @@ function hero() {
         Your gateway to tools, events, and connections that enrich life in
         Suwanee.
       </h1>
-      <h3 class="Poppins">
+      <h3 class="poppins">
         Access hundreds of quality resources for any individual regardless of
         background via Suwanee’s most robust community hub.
       </h3>
