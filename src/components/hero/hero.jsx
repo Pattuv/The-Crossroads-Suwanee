@@ -6,7 +6,7 @@ function hero() {
   return (
     // This is where you write your HTML. When writing remember there can only be one parent html tag in the return().
 
-    <div class="hero-container">
+    <div class="hero-container" id="hero">
       <Gallery />
       <h1 class="libre">
         Your gateway to tools, events, and connections that enrich life in
