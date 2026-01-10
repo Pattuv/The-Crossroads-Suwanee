@@ -17,7 +17,8 @@ function hero() {
         background via Suwanee’s most robust community hub.
       </h3>
       <div class="button">
-        <button class="btn btn-neutral">Our Mission</button>
+        <a href="#manifesto"><button class="btn btn-neutral">Our Mission</button></a>
+        
         <button class="btn btn-outline">View Resources</button>
       </div>
 

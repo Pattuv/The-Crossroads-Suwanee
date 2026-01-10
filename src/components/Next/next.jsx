@@ -1,14 +1,19 @@
 import cityhall from "./cityhall.jpg";
+import nonprofit from "./nonprofit.avif"
+import events from "./events.webp"
+import resources from "./resources.jpg"
+import volunteering from "./volunteering.jpg"
 import community from "./community.png";
+import Card from "./Card"
 
 function next() {
   return  (
-  <div>
+  <div id="manifesto">
   <div className="py-16 p-16 text-white rounded-tl-[55px] rounded-tr-[55px] " style={{ backgroundColor: "var(--accent)" }}>
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold libre">About Crossroads</h2>
+          <h2 className="text-2xl font-semibold libre" >About Crossroads</h2>
           <p className="opacity-90 poppins text-gray-300">
             We are a community of people who care about each other and our town. So, we curated a safe space where you can find all the resources you need to make your life in Suwanee easier.
           </p>
@@ -25,6 +30,48 @@ function next() {
       </div>
     </div>
   </div>
+    <div className="py-16 p-16 text-black bg-white text-center">
+      <div className="container mx-auto px-4">
+        <p className="libre text-3xl mt-10 mb-3">
+          Find your people. Get involved.
+        </p>
+        <p className="poppins text-gray-500">
+          Our community hub provides access to a variety of local amenities to make you feel at home.
+        </p>
+
+        {/* 
+          grid-cols-1  -> mobile (stacked one at a time)
+          sm:grid-cols-2 -> small screens
+          md:grid-cols-4 -> desktop
+        */}
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
+          <Card
+            image={nonprofit}
+            title="Non-Profits"
+            subtitle="Orgs that provide support and are creating change, without the prospect of money."
+          />
+                    <Card
+            image={resources}
+            title="Resources"
+            subtitle="Explore housing, food, and wellness support."
+          />
+
+          <Card
+            image={events}
+            title="Events"
+            subtitle="Discover meetups, festivals, and gatherings."
+          />
+
+
+
+          <Card
+            image={volunteering}
+            title="Volunteering"
+            subtitle="Make a difference in your community."
+          />
+        </div>
+      </div>
+    </div>
   <div className="py-16 p-16 text-black text-right ">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -66,7 +113,7 @@ function next() {
                 Subscribe
               </button>
             </div>
-            <p className="text-xs text-gray-500 poppins">By subscribing, you agree to receive emails from Crossroads Suwanee. You can unsubscribe anytime.</p>
+            <p className="text-xs text-gray-500 poppins">By subscribing, you agree to receive emails from Crossroads Suwanee. You can unsubscribe anytime. *The newsletter doesn't currently work.</p>
           </form>
         </div>
       </div>
