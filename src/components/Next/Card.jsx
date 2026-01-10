@@ -1,6 +1,6 @@
 function Card({ href = "#", image, title, subtitle }) {
   return (
-    <div className="hover-3d my-12 mx-2 cursor-pointer">
+    <a href={href} className="hover-3d my-12 mx-2 cursor-pointer">
       <div
         className="relative overflow-hidden rounded-xl p-5 shadow-sm text-white bg-cover bg-center h-40 md:h-72 lg:h-80 flex items-end"
         style={{ backgroundImage: `url(${image})` }}
@@ -21,7 +21,7 @@ function Card({ href = "#", image, title, subtitle }) {
       <div></div>
       <div></div>
       <div></div>
-    </div>
+    </a>
   );
 }
 

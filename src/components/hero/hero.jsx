@@ -36,7 +36,9 @@ function Hero() {
         <a href="#manifesto">
           <button className="btn btn-neutral">Our Mission</button>
         </a>
-        <button className="btn btn-outline">View Resources</button>
+        <a href="/resources">
+          <button className="btn btn-outline">View Resources</button>
+        </a>
       </div>
     </div>
   );

@@ -65,6 +65,7 @@ function next() {
               subtitle="Orgs that provide support and are creating change, without the prospect of money."
             />
             <Card
+              href="/resources"
               image={resources}
               title="Resources"
               subtitle="Explore housing, food, and wellness support."
