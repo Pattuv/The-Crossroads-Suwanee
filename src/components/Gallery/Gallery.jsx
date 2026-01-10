@@ -1,6 +1,6 @@
 import "./Gallery.css";
 
-function Gallery() {
+function Gallery({ img1, img2, img3, img4, img5 }) {
   return (
     <div className="my-4 grid grid-flow-col auto-cols-[96px] gap-6 -translate-x-6 grid-rows-1 no-scrollbar justify-start sm:-translate-x-4">
       <div
@@ -23,8 +23,7 @@ function Gallery() {
           decoding="async"
           data-nimg="1"
           className="pointer-events-none h-full w-full rounded-2xl object-cover p-1"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_0818.c6837d37.jpg&w=640&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_0818.c6837d37.jpg&w=1920&q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_0818.c6837d37.jpg&w=1920&q=75"
+          src={img1}
           style={{ color: "transparent" }}
         />
       </div>
@@ -49,8 +48,7 @@ function Gallery() {
           decoding="async"
           data-nimg="1"
           className="pointer-events-none h-full w-full rounded-2xl object-cover p-1"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_9026.3b726aa2.jpg&w=640&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_9026.3b726aa2.jpg&w=1920&q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_9026.3b726aa2.jpg&w=1920&q=75"
+          src={img2}
           style={{ color: "transparent" }}
         />
       </div>
@@ -75,8 +73,7 @@ function Gallery() {
           decoding="async"
           data-nimg="1"
           className="pointer-events-none h-full w-full rounded-2xl object-cover p-1"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_7186.a3c670f1.jpg&w=640&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_7186.a3c670f1.jpg&w=1920&q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_7186.a3c670f1.jpg&w=1920&q=75"
+          src={img3}
           style={{ color: "transparent" }}
         />
       </div>
@@ -101,8 +98,7 @@ function Gallery() {
           decoding="async"
           data-nimg="1"
           className="pointer-events-none h-full w-full rounded-2xl object-cover p-1"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_8145.e6bb206e.jpg&w=640&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_8145.e6bb206e.jpg&w=1920&q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIMG_8145.e6bb206e.jpg&w=1920&q=75"
+          src={img4}
           style={{ color: "transparent" }}
         />
       </div>
@@ -127,7 +123,7 @@ function Gallery() {
           decoding="async"
           data-nimg="1"
           className="pointer-events-none h-full w-full rounded-2xl object-cover p-1"
-          src="image.png"
+          src={img5}
           style={{ color: "transparent" }}
         />
       </div>
